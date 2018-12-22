@@ -117,6 +117,70 @@
     // $bodys_arr['sluTags'][] = 'TEST';
     // 更改问答意图中的问答对------------------------------------------结束
 
+    // 获取样本包列表------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/querySet/list?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['pageNo'] = "1";
+    // $bodys_arr['pageSize'] = "200";
+    // 获取样本包列表------------------------------------------结束
+
+    // 新增样本包------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/querySet/add?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['querySetName'] = "测试样本包";
+    // 新增样本包------------------------------------------结束
+
+    // 新增样本------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/query/add?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['querySetId'] = "****";
+    // $bodys_arr['query'] = [];
+    // $bodys_arr['query']['queryString'] = "测试";
+    // $bodys_arr['query']['intentId'] = "*****";
+    // $bodys_arr['query'] = json_encode($bodys_arr['query']);
+    // 新增样本------------------------------------------结束
+
+    // 获取模板包列表------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/patternSet/list?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['pageNo'] = "1";
+    // $bodys_arr['pageSize'] = "200";
+    // 获取模板包列表------------------------------------------结束
+
+    // 查询模型------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/model/list?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // 查询模型------------------------------------------结束
+
+    // 删除模型------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/model/delete?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['modelId'] = "";
+    // 删除模型------------------------------------------结束
+
+    // 训练模型（并生效到沙盒环境）------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/model/train?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['trainOption'] = [];
+    // $bodys_arr['trainOption']['configure']['smartqu'] = "true";
+    // $bodys_arr['trainOption']['configure']['mlqu'] = "false";
+    // $bodys_arr['trainOption']['data']['querySetIds'] = [];
+    // $bodys_arr['trainOption']['data']['patternSetIds'] = ["****"];
+    // 训练模型（并生效到沙盒环境）------------------------------------------结束
+
+    // 模型部署到生产环境------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/deployment/add?access_token=' . $token;
+    // $bodys_arr = [];
+    // $bodys_arr['botId'] = "*****";
+    // $bodys_arr['region'] = "**";
+    // 模型部署到生产环境------------------------------------------结束
 
     // 进行提问------------------------------------------开始
     $url = 'https://aip.baidubce.com/rpc/2.0/unit/bot/chat?access_token=' . $token;
