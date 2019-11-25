@@ -182,7 +182,7 @@
     // $bodys_arr['region'] = "**";
     // 模型部署到生产环境------------------------------------------结束
 
-    // 进行提问------------------------------------------开始
+    // 对技能进行提问------------------------------------------开始
     $url = 'https://aip.baidubce.com/rpc/2.0/unit/bot/chat?access_token=' . $token;
     $bodys_arr = [];
     $bodys_arr['bot_session'] = "";
@@ -206,7 +206,34 @@
     $bodys_arr['request']['user_id'] = "*****";
     $bodys_arr['bot_id'] = "*****";
     $bodys_arr['version'] = "2.0";
-    // 进行提问------------------------------------------结束
+    // 对技能进行提问------------------------------------------结束
+
+    // 对机器人进行提问------------------------------------------开始
+    // $url = 'https://aip.baidubce.com/rpc/2.0/unit/service/chat?access_token=' . $token; // 沙盒环境
+    // // $url = 'https://unit.bj.baidubce.com/rpc/2.0/unit/service/chat?access_token=' . $token; // 生产环境
+    // $bodys_arr = [];
+    //
+    // $bodys_arr['version'] = "2.0";
+    // // $bodys_arr['service_id'] = "******"; // 机器人ID
+    // $bodys_arr['skill_ids'][] = "*****"; // 技能ID_1
+    // $bodys_arr['skill_ids'][] = "*****"; // 技能ID_2
+    // $bodys_arr['skill_ids'][] = "*****"; // 技能ID_3
+    // $bodys_arr['session_id'] = "";
+    // $bodys_arr['log_id'] = "UNITTEST_10000";
+    //
+    // $bodys_arr['request']['user_id'] = "88888";
+    //
+    // $bodys_arr['request']['query'] = "测试问题";
+    // $bodys_arr['request']['query_info']['asr_candidates'] = [];
+    // $bodys_arr['request']['query_info']['source'] = "KEYBOARD";
+    // $bodys_arr['request']['query_info']['type'] = "TEXT";
+    //
+    // 此处需要填写技能ID
+    // $bodys_arr['request']['hyper_params']['*****']['slu_threshold'] = "0.5";
+    // $bodys_arr['request']['hyper_params']['*****']['slu_level'] = "1";
+    // $bodys_arr['request']['hyper_params']['*****']['slu_tags'][] = "TEST_1";
+    // $bodys_arr['request']['hyper_params']['*****']['slu_tags'][] = "TEST_2";
+    // 对机器人进行提问------------------------------------------结束
 
 
     $bodys_arr = json_encode($bodys_arr , JSON_UNESCAPED_UNICODE);
